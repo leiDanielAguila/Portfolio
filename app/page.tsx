@@ -1,6 +1,5 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
-import "./globals.css";
+import "src/app/globals.css";
 export default function Page() {
   return (
     <div className="object-top flex flex-row h-16 p-6">

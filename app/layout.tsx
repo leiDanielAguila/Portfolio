@@ -1,4 +1,4 @@
-import "./globals.css";
+import "src/app/globals.css";
 import { Ubuntu } from "next/font/google";
 export const metadata = {
   title: "Next.js",
