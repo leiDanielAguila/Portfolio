@@ -2,9 +2,15 @@ import TopNav from "@/components/TopNav";
 import * as React from "react";
 import "./globals.css";
 import { DM_Serif_Display } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import { Divider } from "@mui/material";
 const dm_serif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const open_sans = Open_Sans({
   subsets: ["latin"],
   weight: "400",
 });
@@ -24,18 +30,16 @@ export default function Page() {
           </div>
           {/* my short description */}
           <div className="flex flex-col justify-center items-center mt-8">
-            <p className="text-zinc-500 tracking-normal text-justify">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+            <p className={`${open_sans.className} text-zinc-500 tracking-normal text-justify`}>
+              Motivated Computer Science student skilled in programming and
+              graphic design, with expertise in technology. Strong leadership and
+              multitasker, adept at managing projects and collaborating under
+              pressure. Combines technical skills with creativity to build
+              engaging solutions. Eager to contribute in dynamic environments
+              and drive impactful results.
             </p>
           </div>
-          <div>
-            {/* my social media links */}
-          </div>
+          <div>{/* my social media links */}</div>
         </div>
         {/* my picture */}
         <div className="w-1/2 ">
